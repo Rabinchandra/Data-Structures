@@ -120,7 +120,8 @@ class LinkedList:
         # Recursive Call
         self.recursiveReversePrint(node.next)
         print(node.data)
-    
+        
+    # Two solutions of Reversing a linked list using recursion
     # Method to reverse the linked list using recursion - my solution
     def recursiveReverse_1(self, current, prev = None):
         if current is None:
@@ -132,7 +133,6 @@ class LinkedList:
         
         self.recursiveReverse_1(next, current)
     
-    # Two solutions of Reversing a linked list using recursion
     # Method to reverse the linked list using recursion - solution from mycodeschool
     def recursionReverse_2(self, node):
         if node.next is None:
